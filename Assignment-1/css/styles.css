@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.storymaker {
+    background: #fff;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls button,
+.actions button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controls button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 6px;
+}
+
+.actions button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+#resetBtn {
+    background-color: #d9534f;
+}
+
+#storyOutput {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    min-height: 40px;
+}
