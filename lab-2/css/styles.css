@@ -1,9 +1,21 @@
+/* Initial commit: set charset and base HTML styling */
 @charset "utf-8";
+
+/* Add commit: define global font, size, and dark theme */
 html {
+	/* Set default font family */
 	font-family: sans-serif;
+
+	/* Increase base font size */
 	font-size: 200%;
+
+	/* Apply dark background */
 	background-color: rgb(0,0,0);
+
+	/* Set default text color */
 	color: rgb(255,255,255);
+
+	/* Add transition for background color */
 	transition-property: background-color;
 	transition-duration: 0.25s;
 }
