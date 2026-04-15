@@ -1,13 +1,17 @@
+/* Initial commit: add base styling for page */
 body {
+    /* Set font family and background color */
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f4f4;
     text-align: center;
 }
 
+/* Style main heading */
 h1 {
     margin-top: 20px;
 }
 
+/* Add layout styling for car container */
 #carContainer {
     display: flex;
     justify-content: center;
@@ -16,6 +20,7 @@ h1 {
     padding: 20px;
 }
 
+/* Style individual car cards */
 .carCard {
     background: white;
     padding: 20px;
@@ -24,10 +29,12 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Style car card titles */
 .carCard h2 {
     color: #cc0000;
 }
 
+/* Style buttons */
 button {
     margin-top: 10px;
     padding: 8px 12px;
@@ -38,6 +45,7 @@ button {
     cursor: pointer;
 }
 
+/* Add hover effect to buttons */
 button:hover {
     background: #990000;
 }

@@ -1,4 +1,4 @@
-// ToyCar Constructor
+// Initial commit: add ToyCar constructor and object structure
 function ToyCar(
     brand,
     model,
@@ -14,6 +14,7 @@ function ToyCar(
     limitedEdition,
     openingDoors
 ) {
+    // Add properties to ToyCar (brand, model, year, etc.)
     this.brand = brand;
     this.model = model;
     this.year = year;
@@ -30,7 +31,7 @@ function ToyCar(
 }
 
 
-// Create Toy Car Objects
+// Create first toy car object (Lamborghini Aventador)
 const car1 = new ToyCar(
     "Lamborghini",
     "Aventador",
@@ -47,6 +48,7 @@ const car1 = new ToyCar(
     true
 );
 
+// Create second toy car object (Ford Mustang GT)
 const car2 = new ToyCar(
     "Ford",
     "Mustang GT",
@@ -64,11 +66,12 @@ const car2 = new ToyCar(
 );
 
 
-// Function to display a car
+// Add function to dynamically display car details
 function displayCar(car) {
 
     const container = document.getElementById("carContainer");
 
+    // Implement card layout for each car
     const card = document.createElement("div");
     card.classList.add("carCard");
 
@@ -87,10 +90,11 @@ function displayCar(car) {
         <p><strong>Opening Doors:</strong> ${car.openingDoors}</p>
     `;
 
-    // Interaction Button
+    // Add "Change Color" button interaction
     const button = document.createElement("button");
     button.textContent = "Change Color";
 
+    // Update DOM to reflect color change on button click
     button.addEventListener("click", () => {
         car.color = "Black";
         card.querySelector("p:nth-child(4)").innerHTML =
@@ -99,10 +103,11 @@ function displayCar(car) {
 
     card.appendChild(button);
 
+    // Append car cards to container element
     container.appendChild(card);
 }
 
 
-// Display cars on page
+// Render all car objects on page load
 displayCar(car1);
 displayCar(car2);
